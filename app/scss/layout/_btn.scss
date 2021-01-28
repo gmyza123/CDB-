@@ -1,0 +1,50 @@
+.btn{
+    font: 700 18px/21px $play;
+    color: $grey;
+    border: 1px solid $grey;
+    padding: 16px 142px;
+
+    &__btn-grey{
+        padding: 12px 15px;
+        background-color: $grey;
+        color: #fff;
+        border-radius: 0;
+        border: none;
+        font: 400 14px $play;
+    }
+
+    &__btn-white{
+        padding: 12px 15px;
+        background-color: #fff;
+        color: $grey;
+        border-radius: 0;
+        border: none;
+        font: 400 14px $play;
+    }
+
+    &__btn-white-send{
+        padding: 12px 45px;
+        background-color: #fff;
+        color: $grey;
+        border-radius: 0;
+        border: 1px solid $grey;
+        font: 400 14px $play;
+    }
+
+    &__btn-grey-send{
+        background-color: $grey;
+        color: #fff;
+        padding: 12px 45px;
+        border: 1px solid #fff;
+        font: 400 14px $play;
+        border-radius: 0;
+    }
+
+    &__btn-grey-send-noborder{
+        background-color: $grey;
+        color: #fff;
+        padding: 12px 45px;
+        font: 400 14px $play;
+        border-radius: 0;
+    }
+}

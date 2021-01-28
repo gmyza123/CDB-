@@ -1,0 +1,119 @@
+.footer{
+    background-color: $grey;
+    padding: 12vh 0 7vh;
+    color: #fff;
+    margin-bottom: 2vh;
+
+    &__item{
+        color: #fff;
+        margin-right: 6%;
+        margin-bottom: 3.6vh;
+        font: 400 18px/22px $arsenal;
+    }
+
+    &__text{
+        font: 400 18px/22px $arsenal;
+        color: #fff;
+        margin-bottom: 22px;
+    }
+
+    &__link{
+        margin-bottom: 22px;
+        display: inline-block;
+    }
+
+    &__logo{
+        @include size(28px);
+        margin-left: 5px;
+    }
+
+    &__title{
+        font: 400 30px $arsenal;
+        margin-bottom: 20px;
+    }
+
+    
+
+    &__instagram{
+        padding-right: 3vw;
+    }
+
+    &__facebook{
+        padding-right: 4vw;
+    }
+
+    &__copyright{
+        @include pos($b: -30px, $l: 46%);
+        font: 400 14px $arsenal;
+        color: $grey;
+    }
+}
+
+
+
+.footer-white{
+    background-color: #fff;
+    padding: 12vh 0 7vh;
+    color: $grey;
+    margin-bottom: 2vh;
+
+    &__item{
+        color: $grey;
+        margin-right: 6%;
+        margin-bottom: 3.6vh;
+        font: 400 18px/22px $arsenal;
+    }
+
+    &__text{
+        font: 400 18px/22px $arsenal;
+        color: $grey;
+        margin-bottom: 22px;
+    }
+
+    &__link{
+        margin-bottom: 22px;
+        display: inline-block;
+    }
+
+    &__logo{
+        @include size(28px);
+        margin-left: 5px;
+    }
+
+    &__title{
+        font: 400 30px $arsenal;
+        margin-bottom: 20px;
+    }
+
+    &__btn{
+        padding: 12px 15px;
+        background-color: #fff;
+        color: $grey;
+        border-radius: 0;
+        border: none;
+        font: 400 14px $play;
+    }
+
+    &__btn-grey{
+        background-color: $grey;
+        color: #fff;
+        padding: 12px 45px;
+        border: 1px solid #fff;
+        font: 400 14px $play;
+        border-radius: 0;
+    }
+
+    &__instagram{
+        padding-right: 3vw;
+    }
+
+    &__facebook{
+        padding-right: 4vw;
+    }
+
+    &__copyright{
+        @include pos($b: -30px, $l: 46%);
+        font: 400 14px $arsenal;
+        color: $grey;
+    }
+}

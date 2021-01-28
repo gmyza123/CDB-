@@ -1,0 +1,58 @@
+h2.title{
+    font: 700 40px $play;
+    color: $grey;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+h2.title-red{
+    font: 700 40px $play;
+    color: $red;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.text{
+    font: 400 18px/22px $arsenal;
+    color: $grey;
+}
+
+.text__bold{
+    font: 700 18px $arsenal;
+    margin-left: 20px;
+    margin-bottom: 40px;
+
+}
+
+.text__bold-ttu{
+    font: 700 18px $arsenal;
+    margin-left: 20px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.icon-search{
+    @include size(25px);
+}
+
+.icon-instagram{
+    @include size(25px);  
+}
+
+.icon-facebook{
+    @include size(25px);
+}
+
+.icon-marker{
+    @include size(20px);
+}
+
+.chevron-left{
+    @include size(12px, 20px);
+    margin: 12px;   
+}
+
+.chevron-right{
+    @include size(12px, 20px);
+    margin: 12px;
+}

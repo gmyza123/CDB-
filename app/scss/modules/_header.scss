@@ -1,0 +1,69 @@
+.header{
+    padding-top: 86px;
+
+    &__info{
+        background: url('../images/poltava.jpg') no-repeat top center;
+        background-size: cover;
+        min-height: 87vh;
+    }
+
+    &__info-about{
+        background: url('../images/legs.jpg') no-repeat top center;
+        background-size: cover;
+        min-height: 87vh;
+    }
+
+    &__container{
+        width: 100%;
+        padding-right: 8%;
+        padding-left: 8%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &__title{
+        padding-top: 20vh;
+        padding-left: 20%;
+        font: 700 180px $play;
+        background: radial-gradient(73.16% 73.16% at 50.07% 26.84%, #BBDAFF 0%, rgba(187, 247, 255, 0) 100%);
+
+    }
+
+    &__text{
+        font: 700 18px/22px $arsenal;
+        color: #fff;
+        padding-left: 18%;
+        padding-right: 28%;
+        padding-top: 5%; 
+    }
+
+    &__text-about{
+        font: 700 18px/22px $arsenal;
+        color: #fff;
+        padding-left: 12%;
+        padding-right: 28%;
+        padding-top: 41%; 
+    }
+
+
+    &__language{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 127px;
+        position: fixed;
+        top: 46%;
+        right: 4%;
+        font: 700 24px $arsenal;
+    }
+}
+
+.a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: fixed;
+    height: 300px;
+    top: 34%;
+    left: 4%;
+}

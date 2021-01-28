@@ -1,0 +1,116 @@
+.field{
+    display: flex;
+    position: relative;
+
+    input{
+        display: block;
+        padding: 12px 15px;
+        width: 15vw;
+        color: #fff;
+        font: 400 14px $play;
+        margin-right: 26px;
+        background-color: $grey;
+        border: 1px solid #fff;
+        
+        &::placeholder{
+            color: currentColor;
+            transition: all .3s;
+        }
+
+        &:focus{
+            outline: none;
+
+            &::placeholder{
+                color: transparent;
+            }
+
+            + label{
+                @extend .label-up;
+            }
+        }
+    }
+
+    label{
+        @include pos($t: 10px, $l: 15px);
+        color: #cdcdcd;
+        transition: all .3s;
+        opacity: 0;
+        pointer-events: none;
+        padding: 0 5px;
+    }
+}
+
+.field:not(:placeholder-shown){
+    +label{
+        @extend .label-up;
+    }
+}
+
+
+.label-up{
+top: -9px;
+opacity: 1;
+color: #fff;
+background-color: $grey;
+font: 400 14px $play;
+}
+
+.white{
+    .field{
+        display: flex;
+        position: relative;
+    
+        input{
+            display: block;
+            padding: 12px 15px;
+            width: 15vw;
+            color: $grey;
+            font: 400 14px $play;
+            margin-right: 26px;
+            background-color: #fff;
+            border: 1px solid $grey;
+            
+            
+    
+            &::placeholder{
+                color: currentColor;
+                transition: all .3s;
+            }
+    
+            &:focus{
+                outline: none;
+    
+                &::placeholder{
+                    color: transparent;
+                }
+    
+                + label{
+                    @extend .label-up;
+                }
+            }
+        }
+    
+        label{
+            @include pos($t: 10px, $l: 15px);
+            color: $grey;
+            transition: all .3s;
+            opacity: 0;
+            pointer-events: none;
+            padding: 0 5px;
+        }
+    }
+    
+    .field:not(:placeholder-shown){
+        +label{
+            @extend .label-up;
+        }
+    }
+    
+    .label-up{
+    top: -9px;
+    opacity: 1;
+    color: $grey;
+    background-color: #fff;
+    font: 400 14px $play;
+    } 
+}

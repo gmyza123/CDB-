@@ -1,0 +1,37 @@
+.reviews{
+
+    &-1{
+        padding-left: 6%;
+        padding-right: 2%;
+    }
+
+    &-2{
+        padding-left: 3%;
+        padding-right: 5%;
+        padding-top: 9.3vh;
+    }
+
+    &-3{
+        padding-right: 8%;
+        padding-left: 0;
+        padding-top: 9.3vh;
+    }
+
+    &-4{
+        margin-bottom: 17vh;
+    }
+
+    &-5{
+        margin-bottom: 21vh;
+    }
+
+    &-6{
+        padding-left: 3%;
+        padding-right: 5%;
+    }
+
+    &-title{
+        margin-left: 8%;
+        margin-bottom: 40px;
+    }
+}

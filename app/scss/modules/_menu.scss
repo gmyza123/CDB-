@@ -1,0 +1,32 @@
+.menu{
+    padding: 18px 8%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    
+    &__item{
+        padding-left: 100px;
+        font: 700 24px $arsenal;
+        color: $grey;
+    }
+
+    &__link{
+
+        &.active{
+            border-bottom: 2px solid $grey; 
+        }
+    }
+    &__logo{
+       
+    }
+    
+    .icon{
+        font-size: 10px;
+    }
+    
+}

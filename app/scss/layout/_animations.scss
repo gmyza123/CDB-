@@ -1,0 +1,55 @@
+.animations{
+
+    &__gogole{
+        @include pos($r: 0, $t: -14vh);
+        transform: translateX(110%);
+        transition: all .5s;
+    }
+
+    &__gogole._active{
+        transform: translateX(0);
+    }
+
+    &__gogole-reviews{
+        @include pos($r: 0, $b: -12vh);
+        transform: translateX(110%);
+        transition: all .5s;
+    }
+
+    &__gogole-reviews._active{
+        @include pos($r: 0, $b: -12vh);
+        transform: translateX(110%);
+        transition: all .5s;
+    }
+
+    &__verka{
+        @include pos($l:0, $t: 8vh);
+        transform: translateX(-100%);
+        transition: all .5s;
+    }
+
+    &__verka._active{
+        transform: translateX(0);
+    }
+
+    &__verka-footer{
+        @include pos($l: -1vw, $b: -2vh);
+        transform: translateX(-100%);
+        transition: all .5s;
+    }
+    
+    &__verka-footer._active{
+        @include pos($l: -1vw, $b: -2vh);
+        transform: translateX(0);
+    }
+
+    &__verka-reviews{
+        @include pos($l: 0, $t: -30vh);
+        transform: translateX(-100%);
+    }
+
+    &__verka-reviews._active{
+        @include pos($l: 0, $t: -30vh);
+        transform: translateX(0);
+    }
+}
