@@ -1,9 +1,6 @@
 .menu{
     padding: 18px 8%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
+    @include pos($pos: fixed, $t: 0, $r: 0, $l: 0, $z: 3);
     width: 100%;
     height: auto;
     margin-right: auto;

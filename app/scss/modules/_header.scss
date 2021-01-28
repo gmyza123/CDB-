@@ -52,6 +52,7 @@
         justify-content: space-between;
         height: 127px;
         position: fixed;
+        z-index: 3;
         top: 46%;
         right: 4%;
         font: 700 24px $arsenal;
@@ -63,6 +64,7 @@
     flex-direction: column;
     justify-content: space-around;
     position: fixed;
+    z-index: 3;
     height: 300px;
     top: 34%;
     left: 4%;

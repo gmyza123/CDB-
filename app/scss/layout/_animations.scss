@@ -2,24 +2,28 @@
 
     &__gogole{
         @include pos($r: 0, $t: -14vh);
-        transform: translateX(110%);
+        transform: translateX(100%);
         transition: all .5s;
+        display: none;
     }
 
     &__gogole._active{
         transform: translateX(0);
+        display: block;
     }
 
     &__gogole-reviews{
         @include pos($r: 0, $b: -12vh);
-        transform: translateX(110%);
+        transform: translateX(100%);
         transition: all .5s;
+        display: none;
     }
 
     &__gogole-reviews._active{
         @include pos($r: 0, $b: -12vh);
-        transform: translateX(110%);
+        transform: translateX(0);
         transition: all .5s;
+        display: block;
     }
 
     &__verka{
