@@ -2,7 +2,7 @@
     margin-bottom: 27vh;
 
     &__img-w{
-        @include pos($t: 34%, $r: 0, $z: 2);
+        @include pos($t: 34%, $r: 2%, $z: 2);
     }
 
     &__img-m{

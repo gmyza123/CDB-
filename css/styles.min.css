@@ -417,8 +417,8 @@ h2.title-red {
   right: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .animations__gogole.active {
@@ -432,8 +432,8 @@ h2.title-red {
   bottom: -12vh;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .animations__gogole-reviews.active {
@@ -442,8 +442,8 @@ h2.title-red {
   bottom: -12vh;
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .animations__verka {
@@ -452,8 +452,8 @@ h2.title-red {
   left: 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .animations__verka.active {
@@ -464,17 +464,17 @@ h2.title-red {
 .animations__verka-footer {
   position: absolute;
   bottom: -2vh;
-  left: -1vw;
+  left: 0;
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .animations__verka-footer.active {
   position: absolute;
   bottom: -2vh;
-  left: -1vw;
+  left: 0;
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -532,6 +532,7 @@ h2.title-red {
   right: 0;
   bottom: 0;
   z-index: 2;
+  cursor: pointer;
 }
 
 .slider-prev {
@@ -672,6 +673,10 @@ textarea {
   border-bottom: 2px solid #545151;
 }
 
+.menu__link.active:hover {
+  border-color: #FF8686;
+}
+
 .menu .icon {
   font-size: 10px;
 }
@@ -708,7 +713,7 @@ textarea {
 .guides__img-w {
   position: absolute;
   top: 34%;
-  right: 0;
+  right: 3%;
   z-index: 2;
 }
 

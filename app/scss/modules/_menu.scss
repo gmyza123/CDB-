@@ -17,6 +17,10 @@
 
         &.active{
             border-bottom: 2px solid $grey; 
+
+            &:hover{
+                border-color: $red;
+            }
         }
     }
     &__logo{

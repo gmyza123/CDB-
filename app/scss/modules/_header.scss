@@ -27,15 +27,15 @@
 
     &__title{
         padding-top: 29vh;
-        padding-left: 15%;
+        text-align: center;
+        display: block;
     }
 
     &__text{
         font: 700 18px/22px $arsenal;
         color: #fff;
-        padding-left: 18%;
-        padding-right: 28%;
-        padding-top: 3; 
+        padding: 3% 18%;
+        text-align: center;
     }
 
     &__text-about{

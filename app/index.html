@@ -70,9 +70,10 @@
 
 			<div class="header__info">
 				<h1 class="header__title">
-					<img src="images/title.svg" alt="">
+					<img src="images/title.svg" alt="photo" data-aos="fade-up">
 				</h1>
-				<p class="header__text">it is a small but surprisingly picturesque city, founded in 899 by northerners.
+				<p class="header__text" data-aos-delay="300" data-aos="fade-up">it is a small but surprisingly
+					picturesque city, founded in 899 by northerners.
 					It is called the spiritual center of Ukraine. You should come here for a unique color to eat local
 					dumplings and take a walk in the company of Gogol's heroes. </p>
 
@@ -87,10 +88,10 @@
 		</div>
 		<div class="box">
 			<div class="row">
-				<div class="col-12 col-md-6">
-					<img src="images/church.jpg" alt="">
+				<div class="col-12 col-md-6" data-aos="fade-right">
+					<img src="images/church.jpg" alt="photo">
 				</div>
-				<div class="col-12 offset-md-1 col-md-4 text-left">
+				<div class="col-12 offset-md-1 col-md-4 text-left" data-aos="fade-left">
 					<h2 class="title-red">fire tower</h2>
 					<div class="d-flex justify-content-between mb-3">
 						<div class="d-flex">
@@ -114,7 +115,8 @@
 				</div>
 			</div>
 			<div class="position-relative">
-				<img src="images/gogole.jpg" alt="" id="gogole" class="animations__gogole anim-items">
+				<img src="images/gogole.png" alt="photo" class="animations__gogole" data-aos-offset="300"
+					data-aos="fade-up-left">
 			</div>
 		</div>
 
@@ -123,7 +125,7 @@
 	<section class="cathedral">
 		<div class="header__container cathedral__front">
 			<div class="row">
-				<div class="col-12 col-md-7">
+				<div class="col-12 col-md-7 p-0">
 					<h2 class="title mb-2">the assumption cathedral</h2>
 					<div class="d-flex justify-content-between mb-3">
 						<div class="d-flex">
@@ -148,7 +150,7 @@
 		</div>
 		<div class="position-relative">
 			<img src="images/cathedral.jpg" alt="">
-			<img src="images/verka.jpg" alt="" id="verka" class="animations__verka">
+			<img src="images/verka.png" alt="" class="animations__verka" data-aos-offset="300" data-aos="fade-up-right">
 		</div>
 
 	</section>
@@ -156,10 +158,10 @@
 	<section class="square">
 		<div class="box">
 			<div class="row">
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-6" data-aos="fade-right">
 					<img src="images/square.jpg" alt="">
 				</div>
-				<div class="col-12 offset-md-1 col-md-4">
+				<div class="col-12 offset-md-1 col-md-4" data-aos="fade-left">
 					<h2 class="title-red mb-3">round square</h2>
 					<div class="d-flex justify-content-between mb-3 mt-3">
 						<div class="d-flex">
@@ -184,7 +186,7 @@
 	<section class="guides">
 		<div class="box">
 			<div class="row">
-				<div class="col-12 offset-md-1 col-md-3 guides__info">
+				<div class="col-12 offset-md-1 col-md-3 guides__info p-0">
 					<h2 class="title mb-3">our guides</h2>
 					<p class="text mt-3">Our friendly team is working on your vacation, everyone contributes. Here are
 						the
@@ -197,10 +199,12 @@
 					</p>
 					<button class="btn mt-3">More</button>
 				</div>
-				<div class="col-12 offset-md-1 col-md-7 position-relative">
-					<img src="images/blonde.jpg" alt="">
-					<img src="images/brunette.jpg" alt="" class="guides__img-w">
-					<img src="images/men.jpg" alt="" class="guides__img-m">
+				<div class="col-12 offset-md-1 col-md-7 position-relative p-0">
+					<img src="images/blonde.jpg" alt="photo" data-aos="zoom-in-up">
+					<img src="images/brunette.jpg" alt="photo" class="guides__img-w" data-aos="zoom-in-left"
+						data-aos-delay="800">
+					<img src="images/men.jpg" alt="photo" class="guides__img-m" data-aos="zoom-in-down"
+						data-aos-delay="400">
 				</div>
 			</div>
 		</div>
@@ -209,10 +213,10 @@
 	<section class="gazebo">
 		<div class="box">
 			<div class="row">
-				<div class="col-12 col-md-6">
+				<div class="col-12 col-md-6" data-aos="fade-right">
 					<img src="images/gazebo.jpg" alt="">
 				</div>
-				<div class="col-12 offset-md-1 col-md-4">
+				<div class="col-12 offset-md-1 col-md-4" data-aos="fade-left">
 					<h2 class="title-red mb-3">the white gazebo</h2>
 					<div class="d-flex justify-content-between mb-3 mt-3">
 						<div class="d-flex">
@@ -237,7 +241,7 @@
 	</section>
 
 	<footer class="footer position-relative">
-		<div class="header__container">
+		<div class="header__container" data-aos="fade-up">
 			<div class="row">
 				<div class="footer__info text-left col-8">
 					<ul class="text d-flex">
@@ -290,6 +294,10 @@
 		</div>
 		<p class="footer__copyright">2020 © Poltava tours</p>
 	</footer>
+
+	<script>
+
+	</script>
 
 	<!--build:js js/main.min.js -->
 	<script src="js/bundle.min.js"></script>

@@ -40,14 +40,13 @@ if (animItems.length > 0) {
 			slidesToShow: 1,
 			slidesToScroll: 1,
 			arrows: false,
-			fade: true,
+			fade: false,
 			asNavFor: '.slider-nav'
 		});
 		$('.slider-nav').slick({
 			slidesToShow: 2,
 			slidesToScroll: 1,
 			asNavFor: '.slider-for',
-			// centerMode: true,
 			focusOnSelect: true,
 			appendArrows: $('.slider__arrows'),
 			prevArrow: '<div class="slider-prev"><svg class="chevron-left"><use xlink:href="#chevron-left"></use></svg></div>',
@@ -55,24 +54,6 @@ if (animItems.length > 0) {
 		});
 
 		// Animation
-		let sections = {
-			gogole: $('#gogole').offset().top,
-			verka: $('#verka').offset().top,
-		};
-
-		console.log('Pos =>', sections);
-
-		$(window).scroll(() => {
-			let scrTop = $(document).scrollTop();
-			if (scrTop = sections) {
-				$('#verka').addClass('active')
-				$('#gogole').addClass('active')
-			} else {
-				$('#verka').removeClass('active')
-				$('#gogole').removeClass('active')
-			}
-
-		});
-
+		AOS.init();
 	});
 })(jQuery);
