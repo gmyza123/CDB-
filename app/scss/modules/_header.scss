@@ -7,6 +7,10 @@
         min-height: 87vh;
     }
 
+    &__link{
+        cursor: pointer;
+    }
+
     &__info-about{
         background: url('../images/legs.jpg') no-repeat top center;
         background-size: cover;
@@ -22,11 +26,8 @@
     }
 
     &__title{
-        padding-top: 20vh;
-        padding-left: 20%;
-        font: 700 180px $play;
-        background: radial-gradient(73.16% 73.16% at 50.07% 26.84%, #BBDAFF 0%, rgba(187, 247, 255, 0) 100%);
-
+        padding-top: 29vh;
+        padding-left: 15%;
     }
 
     &__text{
@@ -34,7 +35,7 @@
         color: #fff;
         padding-left: 18%;
         padding-right: 28%;
-        padding-top: 5%; 
+        padding-top: 3; 
     }
 
     &__text-about{

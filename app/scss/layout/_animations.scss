@@ -4,26 +4,22 @@
         @include pos($r: 0, $t: -14vh);
         transform: translateX(100%);
         transition: all .5s;
-        display: none;
     }
 
-    &__gogole._active{
+    &__gogole.active{
         transform: translateX(0);
-        display: block;
     }
 
     &__gogole-reviews{
         @include pos($r: 0, $b: -12vh);
         transform: translateX(100%);
         transition: all .5s;
-        display: none;
     }
 
-    &__gogole-reviews._active{
+    &__gogole-reviews.active{
         @include pos($r: 0, $b: -12vh);
         transform: translateX(0);
         transition: all .5s;
-        display: block;
     }
 
     &__verka{
@@ -32,7 +28,7 @@
         transition: all .5s;
     }
 
-    &__verka._active{
+    &__verka.active{
         transform: translateX(0);
     }
 
@@ -42,7 +38,7 @@
         transition: all .5s;
     }
     
-    &__verka-footer._active{
+    &__verka-footer.active{
         @include pos($l: -1vw, $b: -2vh);
         transform: translateX(0);
     }
@@ -52,7 +48,7 @@
         transform: translateX(-100%);
     }
 
-    &__verka-reviews._active{
+    &__verka-reviews.active{
         @include pos($l: 0, $t: -30vh);
         transform: translateX(0);
     }

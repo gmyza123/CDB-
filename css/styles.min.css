@@ -83,6 +83,8 @@ a {
 
 a:hover {
   text-decoration: none;
+  cursor: pointer;
+  color: #FF8686;
 }
 
 .box {
@@ -330,6 +332,14 @@ h2.title-red {
   color: #545151;
   border: 1px solid #545151;
   padding: 16px 142px;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.btn:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .btn__btn-grey {
@@ -341,6 +351,12 @@ h2.title-red {
   font: 400 14px "Play", sans-serif;
 }
 
+.btn__btn-grey:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .btn__btn-white {
   padding: 12px 15px;
   background-color: #fff;
@@ -348,6 +364,12 @@ h2.title-red {
   border-radius: 0;
   border: none;
   font: 400 14px "Play", sans-serif;
+}
+
+.btn__btn-white:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .btn__btn-white-send {
@@ -359,6 +381,12 @@ h2.title-red {
   font: 400 14px "Play", sans-serif;
 }
 
+.btn__btn-white-send:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .btn__btn-grey-send {
   background-color: #545151;
   color: #fff;
@@ -366,6 +394,13 @@ h2.title-red {
   border: 1px solid #fff;
   font: 400 14px "Play", sans-serif;
   border-radius: 0;
+}
+
+.btn__btn-grey-send:hover {
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 .btn__btn-grey-send-noborder {
@@ -384,13 +419,11 @@ h2.title-red {
           transform: translateX(100%);
   -webkit-transition: all .5s;
   transition: all .5s;
-  display: none;
 }
 
-.animations__gogole._active {
+.animations__gogole.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  display: block;
 }
 
 .animations__gogole-reviews {
@@ -401,10 +434,9 @@ h2.title-red {
           transform: translateX(100%);
   -webkit-transition: all .5s;
   transition: all .5s;
-  display: none;
 }
 
-.animations__gogole-reviews._active {
+.animations__gogole-reviews.active {
   position: absolute;
   right: 0;
   bottom: -12vh;
@@ -412,7 +444,6 @@ h2.title-red {
           transform: translateX(0);
   -webkit-transition: all .5s;
   transition: all .5s;
-  display: block;
 }
 
 .animations__verka {
@@ -425,7 +456,7 @@ h2.title-red {
   transition: all .5s;
 }
 
-.animations__verka._active {
+.animations__verka.active {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
@@ -440,7 +471,7 @@ h2.title-red {
   transition: all .5s;
 }
 
-.animations__verka-footer._active {
+.animations__verka-footer.active {
   position: absolute;
   bottom: -2vh;
   left: -1vw;
@@ -456,7 +487,7 @@ h2.title-red {
           transform: translateX(-100%);
 }
 
-.animations__verka-reviews._active {
+.animations__verka-reviews.active {
   position: absolute;
   top: -30vh;
   left: 0;
@@ -464,25 +495,58 @@ h2.title-red {
           transform: translateX(0);
 }
 
-.slider__container {
-  overflow: hidden;
-}
-
-.slider__track {
+.slider__col-1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 205px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding-right: 5%;
+}
+
+.slider__col-4 {
+  padding-right: 20%;
+}
+
+.slider__col-3 {
+  padding-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider__item {
+  height: 20vh;
 }
 
 .slider__arrows {
-  position: relative;
-  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+
+.slider-prev {
+  padding: 5px 15px;
+  background-color: #fff;
+}
+
+.slider-next {
+  padding: 5px 15px;
+  background-color: #fff;
 }
 
 .slider__img {
   height: 100%;
-  min-width: 100%;
+  max-width: 100%;
 }
 
 .feedback {
@@ -509,6 +573,10 @@ textarea {
   min-height: 87vh;
 }
 
+.header__link {
+  cursor: pointer;
+}
+
 .header__info-about {
   background: url("../images/legs.jpg") no-repeat top center;
   background-size: cover;
@@ -524,10 +592,8 @@ textarea {
 }
 
 .header__title {
-  padding-top: 20vh;
-  padding-left: 20%;
-  font: 700 180px "Play", sans-serif;
-  background: radial-gradient(73.16% 73.16% at 50.07% 26.84%, #BBDAFF 0%, rgba(187, 247, 255, 0) 100%);
+  padding-top: 29vh;
+  padding-left: 15%;
 }
 
 .header__text {
@@ -535,7 +601,7 @@ textarea {
   color: #fff;
   padding-left: 18%;
   padding-right: 28%;
-  padding-top: 5%;
+  padding-top: 3;
 }
 
 .header__text-about {
@@ -593,6 +659,7 @@ textarea {
   height: auto;
   margin-right: auto;
   margin-left: auto;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .menu__item {
@@ -611,6 +678,7 @@ textarea {
 
 .excurcions {
   padding-top: 8vh;
+  overflow: hidden;
 }
 
 .excurcions .box {
@@ -801,6 +869,10 @@ textarea {
   background-color: #fff;
   color: #545151;
   border-color: #545151;
+}
+
+.reviews {
+  margin-top: 21vh;
 }
 
 .reviews-1 {

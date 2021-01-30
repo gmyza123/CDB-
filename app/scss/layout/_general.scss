@@ -25,6 +25,8 @@ a {
 
 	&:hover{
 		text-decoration: none;
+		cursor: pointer;
+		color: $red;
 	}
 }
 

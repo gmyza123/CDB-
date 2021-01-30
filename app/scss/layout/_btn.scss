@@ -3,6 +3,12 @@
     color: $grey;
     border: 1px solid $grey;
     padding: 16px 142px;
+    transition: all .3s;
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
 
     &__btn-grey{
         padding: 12px 15px;
@@ -11,6 +17,11 @@
         border-radius: 0;
         border: none;
         font: 400 14px $play;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
     }
 
     &__btn-white{
@@ -20,6 +31,11 @@
         border-radius: 0;
         border: none;
         font: 400 14px $play;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
     }
 
     &__btn-white-send{
@@ -29,6 +45,11 @@
         border-radius: 0;
         border: 1px solid $grey;
         font: 400 14px $play;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
     }
 
     &__btn-grey-send{
@@ -38,6 +59,12 @@
         border: 1px solid #fff;
         font: 400 14px $play;
         border-radius: 0;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            color: #fff;
+        }
     }
 
     &__btn-grey-send-noborder{

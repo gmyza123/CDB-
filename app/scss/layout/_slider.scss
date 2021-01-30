@@ -1,27 +1,45 @@
 .slider{
 
-    &__container{
-        overflow: hidden;
+    &__col-1{
+        display: flex;
+        align-items: flex-end;
+        padding-right: 5%;
+       
     }
 
-    &__track{
+    &__col-4{
+        padding-right: 20%;
+    }
+
+    &__col-3{
+        padding-left: 5%;
         display: flex;
-        height: 205px;
+        justify-content: space-between;
+        flex-direction: column;
     }
 
     &__item{
+        height: 20vh;
         
     }
 
     &__arrows{
-        position: relative;
-        margin: 0 auto;
+        @include pos($pos: absolute, $b: 0, $r: 0, $z: 2);
+    }
+
+    &-prev{
+        padding: 5px 15px;
+        background-color: #fff;
+    }
+
+    &-next{
+        padding: 5px 15px;
+        background-color: #fff;
     }
     
     &__img{
         height: 100%;
-        min-width: 100%;
+        max-width: 100%;
     }
 }
-
 

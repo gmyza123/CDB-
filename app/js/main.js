@@ -1,6 +1,6 @@
 'use strict';
 
-const animItems = document.querySelectorAll('._anim-items');
+const animItems = document.querySelectorAll('.anim-items');
 
 if (animItems.length > 0) {
 	window.addEventListener('scroll', animOnScroll);
@@ -36,51 +36,43 @@ if (animItems.length > 0) {
 (function ($) {
 	$(document).ready(function () {
 		// Slider
-		let position = 0;
-		const slidesToShow = 4;
-		const slidesToScroll = 1;
-		const container = $('.slider__container');
-		const track = $('.slider__track');
-		const item = $('.slider__item');
-		const btnPrev = $('.slider__prev');
-		const btnNext = $('.slider__next');
-		const itemsCount = item.length;
-		const itemWidth = container.width() / slidesToShow;
-		const movePosition = slidesToScroll * itemWidth;
+		$('.slider-for').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			asNavFor: '.slider-nav'
+		});
+		$('.slider-nav').slick({
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			asNavFor: '.slider-for',
+			// centerMode: true,
+			focusOnSelect: true,
+			appendArrows: $('.slider__arrows'),
+			prevArrow: '<div class="slider-prev"><svg class="chevron-left"><use xlink:href="#chevron-left"></use></svg></div>',
+			nextArrow: '<div class="slider-next"><svg class="chevron-right"><use xlink:href="#chevron-right"></use></svg></div>',
+		});
 
-		item.each(function (index, item) {
-			$(item).css({
-				minWidth: itemWidth,
-			})
-		})
-
-		btnPrev.click(function () {
-			const itemsLeft = Math.abs(position) / itemWidth
-			position -= itemsLeft >= slidesToShow ? movePosition : itemsLeft * itemWidth;
-
-			setPosition();
-			checkBtns();
-		})
-
-		btnNext.click(function () {
-			const itemsLeft = itemsCount - (Math.abs(position) + slidesToShow * itemWidth) / itemWidth;
-			position += itemsLeft >= slidesToShow ? movePosition : itemsLeft * itemWidth;
-
-			setPosition();
-			checkBtns();
-		})
-
-		const setPosition = () => {
-			track.css(function () {
-				transform: `translateX(${position}px)`
-			})
-		}
-
-		const checkBtns = () => {
-			btnPrev.prop('disabled', position === 0);
-			btnNext.prop('disabled', position <= -(itemsCount - slidesToShow) * itemWidth);
+		// Animation
+		let sections = {
+			gogole: $('#gogole').offset().top,
+			verka: $('#verka').offset().top,
 		};
 
-		checkBtns();
+		console.log('Pos =>', sections);
+
+		$(window).scroll(() => {
+			let scrTop = $(document).scrollTop();
+			if (scrTop = sections) {
+				$('#verka').addClass('active')
+				$('#gogole').addClass('active')
+			} else {
+				$('#verka').removeClass('active')
+				$('#gogole').removeClass('active')
+			}
+
+		});
+
 	});
 })(jQuery);
